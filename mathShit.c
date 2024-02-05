@@ -64,6 +64,25 @@ int callIsEvenFunc()
     (isEven == 1) ? printf("%d is Even\n", num) : printf("%d is Odd\n", num);
 }
 
+int fact(int num)
+{
+    int f = 1;
+    for (int i = 1; i <= num; i++)
+    {
+        f = i * f;
+        printf("%d\n", f);
+    }
+    // printf("%d\n",f);
+    return f;
+}
+int callFact()
+{
+    printf("num :\n >");
+    int num;
+    scanf("%d", &num);
+    fact(num);
+}
+
 int main()
 {
     // CALL FUNCTIONS HERE
